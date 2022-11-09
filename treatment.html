@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:wght@300;400;500;700;800&family=Poppins:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>La Ville esthétique</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top py-3">
+      <div class="container">
+        <a href="index.html" class="navbar-brand" style="font-size: 22px; font-weight: 500;"><img src="img/logo.png" style="height:auto ; width: 70px; margin-left: 22px;">&nbsp;&nbsp;La Ville Esthétique</a>
+  
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"><i class="fa-solid fa-bars" style="margin-top: 5px;"></i></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="condition.html" id="navbarDropdown" role="button" data-bs-hover="dropdown" aria-expanded="false">
+                Conditions
+              </a>
+              <ul class="dropdown-menu  animate slideIn" style="background-color: #2D2D2D;" aria-labelledby="navbarDropdown">
+                  <div class="col-md p-5">
+                    <h3 style="font-weight: 400; color:#F8F8F8;">Face</h3>
+                    <li><hr class="dropdown-divider" style="color: #F8F8F8;"></li>
+                    <li><a class="dropdown-item" href="skin.html" style="margin-bottom: 7px;">Saggy Skin</a></li>
+                    <li><a class="dropdown-item" href="#" style="margin-bottom: 7px;">Dull & Tired <br>Looking Skin</a></li>
+                    <li><a class="dropdown-item" href="#">Ageing Eyes</a></li>
+                    <h3 style="font-weight: 400; color: #F8F8F8; margin-top: 40px;">Body</h3>
+                    <li><hr class="dropdown-divider" style="color: #F8F8F8;"></li>
+                    <li><a class="dropdown-item" href="#" style="margin-bottom: 7px;">Hand Rejuvenation</a></li>
+                    <li><a class="dropdown-item" href="#" style="margin-bottom: 7px;">Body Contouring <br>& Tightening</a></li>
+                    <li><a class="dropdown-item" href="#" style="margin-bottom: 7px;">Calf Reduction</a></li>
+                  </div>   
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="package.html" class="nav-link">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="blog.html" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-primary btn-light" href="appointment.html"  id= "navbtn" role="button">Book Now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Banner-->
+    <section class="p-5" id="treatmentbanner">
+        <h1 style="text-align: center; font-weight: 700; font-size: 64px; color: white; margin-top: 100px; ">Facial Thread Lift</h1>
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-10"><p style="text-align: center; font-size:24px; font-weight:700; color:white">Looking to look younger and revitalised? Find the perfect <br> solution with our personalised consultation today!</p></div>
+          <div class="col-1"></div>
+        </div>
+    </section>
+
+    <!--Treatment description-->
+    <section class="p-5" style="text-align: center; margin-top: 50px;">
+      <h1 style="font-weight:700 ; font-size:32px; margin-bottom: 30px;">What is Tread Lifting?</h1>
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10"><p style="font-weight: 400; font-size:20px; margin-bottom: 25px;">A cosmetic procedure that offers a minimally invasive alternative to facelift surgery.
+        </p>
+        <p style="font-weight: 400; font-size:20px">Thread lift helps to tighten your skin by inserting medical threads into your face, then <br> “pulling” your skin by tightening the thread.
+        </p></div>
+        <div class="col-1"></div>
+      </div>
+    </section>
+
+    <!--Treatment Benefits-->
+    <section class="p-5" style="margin-top:20px ;">
+        <div class="container">
+            <h1 style="text-align: center; font-weight:700; font-size: 32px; margin-bottom: 40px;">Key Benefits</h1>
+            <div class="row">
+                <div class="col-md p-5">
+                  <img src="img/treatment1.png" width="80px" alt="" style="margin: auto; display:block; margin-bottom:20px;">
+                    <p style="font-weight: 400; font-size:20px; text-align: center;">Minimally Invasive and Safe</p>
+                </div>
+                <div class="col-md p-5">
+                    <img src="img/treatment2.png" width="80px" alt="" style="margin: auto; display:block; margin-bottom:20px;">
+                    <p style="font-weight: 400; font-size:20px; text-align: center;">100% Dissolvable</p>
+                </div>
+                <div class="col-md p-5">
+                    <img src="img/treatment3.png" width="80px" alt="" style="margin: auto; display:block; margin-bottom:20px;">
+                    <p style="font-weight: 400; font-size:20px; text-align: center;">Rejuvenate Appearance</p>
+                </div>
+                <div class="col-md p-5">
+                    <img src="img/treatment4.png" width="80px" alt="" style="margin: auto; display:block; margin-bottom:20px;">
+                    <p style="font-weight: 400; font-size:20px; text-align: center;">Low Downtime</p>
+                </div>
+            </div>
+            <h1 style="text-align: center; font-weight:700; font-size: 32px; margin-top: 50px; margin-bottom: 50px;">Thread Material</h1>
+            <div class="row" style="margin-bottom: 20px;">
+                <div class="col-1"></div>
+                <div class="col-10"><p style="text-align: center; font-size: 20px; font-weight: 400;">At La Ville Esthétique, we recommend the most suitable treatment that suits your skin <br>type to achieve the best outcome.</p></div>
+                <div class="col-1"></div>
+            </div>
+            <p style="text-align: center; font-size: 20px; font-weight: 400; margin-bottom: 40px;">Polydioxanone (PDO): 6-12 months
+                <br>Poly-L-Lactic Acid (PLLA): 12-18 months
+                <br>Polycaprolactone (PCL): 24-36 months
+            </p>
+        </div>
+    </section>
+
+    <!--Thread Procedures-->
+    <section class="p-5" style="text-align:center; margin-top: 30px;">
+        <div class="container">
+            <h1 style="font-weight: 700; font-size: 32px; margin-bottom: 30px; ">Thread Procedures</h1>
+            <div class="row">
+                <div class="col-md p-5">
+                    <h1 style="font-size: 24px; font-weight:700;">Step 1:</h1>
+                    <h1 style="font-size: 24px; font-weight:700; margin-bottom: 15px;">Anaesthesia</h1>
+                    <p style="font-size: 20px; font-weight:400;">Before the procedure, our doctor will prescribe anaesthesia to reduce pain and downtime for treatment areas.</p>
+                </div>
+                <div class="col-md p-5">
+                    <h1 style="font-size: 24px; font-weight:700;">Step 2:</h1>
+                    <h1 style="font-size: 24px; font-weight:700; margin-bottom: 15px;">Incision</h1>
+                    <p style="font-size: 20px; font-weight:400;">A thin cannula will be used to insert the threads underneath your skin. </p>
+                </div>
+                <div class="col-md p-5">
+                    <h1 style="font-size: 24px; font-weight:700;">Step 3:</h1>
+                    <h1 style="font-size: 24px; font-weight:700; margin-bottom: 15px;">Tightening</h1>
+                    <p style="font-size: 20px; font-weight:400;">You may feel light pressure or tightening under your skin. Once tightened, the tread ends will be cut, and no stitches are required</p>
+                </div>
+                <div class="col-md p-5">
+                    <h1 style="font-size: 24px; font-weight:700;">Step 4:</h1>
+                    <h1 style="font-size: 24px; font-weight:700; margin-bottom: 15px;">Results</h1>
+                    <p style="font-size: 20px; font-weight:400;">Within a few minutes of the cannula being taken out, your procedure will be completed.
+                    </p>
+                </div>
+            </div>    
+        </div>    
+    </section>
+
+    <!--Before After-->
+    <section class="p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md p-5">
+                    <img src="img/before.png" class="img-fluid" alt="" style="margin: auto; display:block;">
+                    <p style="font-size: 24px; font-weight: 700; text-align: center; margin-top: 20px;">Before</p>
+                </div>
+                <div class="col-md p-5">
+                    <img src="img/after.png" class="img-fluid" alt="" style="margin: auto; display:block;">
+                    <p style="font-size: 24px; font-weight: 700; text-align: center; margin-top: 20px;">After</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!--Common Treatment Areas-->
+     <section class="p-5" style="margin-top:20px ;">
+      <div class="container">
+          <h1 style="text-align: center; font-weight:700; font-size: 32px; margin-bottom: 40px;">Common Treatment Areas</h1>
+          <div class="row">
+              <div class="col-md p-5">
+                <img src="img/treatment5.png" width="80px" alt="" style="margin: auto; display:block; margin-bottom:20px;">
+                  <p style="font-weight: 400; font-size:20px; text-align: center;">Jowls & Jawline</p>
+              </div>
+              <div class="col-md p-5">
+                  <img src="img/treatment6.png" width="80px" alt="" style="margin: auto; display:block; margin-bottom:20px;">
+                  <p style="font-weight: 400; font-size:20px; text-align: center;">Loose Skin</p>
+              </div>
+              <div class="col-md p-5">
+                  <img src="img/treatment7.png" width="80px" alt="" style="margin: auto; display:block; margin-bottom:20px;">
+                  <p style="font-weight: 400; font-size:20px; text-align: center;">Droopy Eyelids</p>
+              </div>
+              <div class="col-md p-5">
+                  <img src="img/treatment8.png" width="80px" alt="" style="margin: auto; display:block; margin-bottom:20px;">
+                  <p style="font-weight: 400; font-size:20px; text-align: center;">Wrinkles Reduction</p>
+              </div>
+          </div>
+        </div>  
+      </section>  
+
+    <!--FAQ-->
+    <section id="questions" class="p-5" style="margin-bottom: 80px; margin-top: 20px;">
+        <div class="container">
+          <h2 class="text-center mb-4" style="font-weight: 700; font-size: 32px;">Frequently Asked Questions</h2>
+          <div class="accordion" id="accordionExample" style="margin-top: 50px;">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button d-block text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="treatmentfaq" style=" font-family: 'Josefin Sans'; font-weight:700; font-size:22px; background-color:#2D2D2D; color: white; padding-top: 30px; padding-bottom: 30px;">
+                  Are Thread Lifts Painful ?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="text-align: center; font-weight:400; font-size:18px; padding-top:30px; padding-bottom:30px">
+                  Thread lifts are performed after administering local anaesthesia. At LVE, we aim to provide painless <br>treatment to ensure you have the best experience with us.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button d-block text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" id="treatmentfaq" style=" font-family: 'Josefin Sans'; font-weight:700; font-size:22px; background-color:#2D2D2D; color: white; padding-top: 30px; padding-bottom: 30px;">
+                  How Many Threads will I Need ?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="text-align: center; font-weight:400; font-size:18px; padding-top:30px; padding-bottom:30px">
+                  The number of threads you will require will mostly rely on the area that you want to treat and the degree of skin laxity you have. 
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button d-block text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" id="treatmentfaq" style=" font-family: 'Josefin Sans'; font-weight:700; font-size:22px; background-color:#2D2D2D; color: white; padding-top: 30px; padding-bottom: 30px;">
+                  How Long does Recovery Take After a Thread Lift Procedure?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="text-align: center; font-weight:400; font-size:18px; padding-top:30px; padding-bottom:30px">
+                  Patients take one to two weeks to completely recover from a thread lift procedure. At LVE, we are committed to your well-being. We provide aftercare services for our patients to maximise the benefits of their treatments and help them reach their beauty goals faster.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button d-block text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" id="treatmentfaq" style=" font-family: 'Josefin Sans'; font-weight:700; font-size:22px; background-color:#2D2D2D; color: white; padding-top: 30px; padding-bottom: 30px;">
+                  Are Thread Lifts Safe ?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="text-align: center; font-weight:400; font-size:18px; padding-top:30px; padding-bottom:30px">
+                  Thread lifts are low risk. After a thread lift, there is almost no risk of scarring, suffering from significant bruising, bleeding, or experiencing other complications.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+   <!--Footer-->
+   <section class="p-5" id="footer" style="background-color: #F8F8F8;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <h1 style="font-size:20px ; font-weight: 400;">Want to Know More?</h1>
+          <p style="font-weight: 700; font-size:36px;"> Consult Our Doctor Today!</p>
+          <a class="btn btn-dark" id="darkbtn" style="border-radius: 0px; padding-left:30px ; padding-right: 30px; font-size: 24px;" href="appointment.html" role="button">Consult Now</a>
+        </div> 
+        <div class="col-md-1"></div>
+        <div class="col-md-2">
+          <a href="about.html" style="text-decoration:none; color: #2D2D2D; display: block; margin-top: 20px;">About Us</a>
+          <a href="condition.html" style="text-decoration:none; color: #2D2D2D; display: block; margin-top: 20px;">Conditions</a>
+          <a href="package.html" style="text-decoration:none; color: #2D2D2D; display: block; margin-top: 20px;">Packages</a>
+        </div>
+        <div class="col-md-2">
+          <a href="contact.html" style="text-decoration:none; color: #2D2D2D; display: block; margin-top: 20px;">Contact Us</a>
+          <a href="blog.html" style="text-decoration:none; color: #2D2D2D; display: block; margin-top: 20px;">Blog</a>
+          
+        </div>
+        <div class="col-md-2">
+          <a href="pdpa.html" style="text-decoration:none; color: #2D2D2D; display: block; margin-top: 20px;">Terms and Conditions</a>
+          <a href="pdpa.html" style="text-decoration:none; color: #2D2D2D; display: block; margin-top: 20px;">Privacy Policy</a>
+        </div>
+        <hr style="margin-top: 40px;">
+      </div>
+      <div class="row">
+        <div class="col-md-10">
+          <p style="font-size:14px ; font-weight: 400;">Copyright &copy; 2022 La Ville Esthétique. All rights reserved.
+        </div>
+        <div class="col-md-2">
+          <a href="#" style="text-decoration:none; color: #2D2D2D; display: block;"><i class="fa-brands fa-instagram">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-facebook-f"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-twitter"></i></i></a>
+        </div>
+      </div>  
+    </div>  
+  </section>
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:wght@300;400;500;700;800&family=Poppins:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>La Ville Esthétique</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top py-3">
+      <div class="container">
+        <a href="index.html" class="navbar-brand" style="font-size: 22px; font-weight: 500;"><img src="img/logo.png" style="height:auto ; width: 70px; margin-left: 22px;">&nbsp;&nbsp;La Ville Esthétique</a>
+  
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"><i class="fa-solid fa-bars" style="margin-top: 5px;"></i></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="condition.html" id="navbarDropdown" role="button" data-bs-hover="dropdown" aria-expanded="false">
+                Conditions
+              </a>
+              <ul class="dropdown-menu  animate slideIn" style="background-color: #2D2D2D;" aria-labelledby="navbarDropdown">
+                  <div class="col-md p-5">
+                    <h3 style="font-weight: 400; color:#F8F8F8;">Face</h3>
+                    <li><hr class="dropdown-divider" style="color: #F8F8F8;"></li>
+                    <li><a class="dropdown-item" href="skin.html" style="margin-bottom: 7px;">Saggy Skin</a></li>
+                    <li><a class="dropdown-item" href="#" style="margin-bottom: 7px;">Dull & Tired <br>Looking Skin</a></li>
+                    <li><a class="dropdown-item" href="#">Ageing Eyes</a></li>
+                    <h3 style="font-weight: 400; color: #F8F8F8; margin-top: 40px;">Body</h3>
+                    <li><hr class="dropdown-divider" style="color: #F8F8F8;"></li>
+                    <li><a class="dropdown-item" href="#" style="margin-bottom: 7px;">Hand Rejuvenation</a></li>
+                    <li><a class="dropdown-item" href="#" style="margin-bottom: 7px;">Body Contouring <br>& Tightening</a></li>
+                    <li><a class="dropdown-item" href="#" style="margin-bottom: 7px;">Calf Reduction</a></li>
+                  </div>   
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="package.html" class="nav-link">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="blog.html" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-primary btn-light" href="appointment.html"  id= "navbtn" role="button">Book Now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--PDPA-->
+    <section class="p-5" style="margin-top: 20px;">
+      <div class="container">
+        <div class="col-12">
+          <h1 style="text-align: center; font-weight:700; font-size: 36px; margin-bottom:30px;">Data Protection <br> Notice for Customers</h1>
+          <p style="font-weight: 400; font-size:20px">This Data Protection Notice <span style="font-weight:600 ;">(“Notice”)</span> sets out the basis which La Ville esthétique <span style="font-weight:600 ;">(“we”, “us”, or “our”)</span>  may collect, use, disclose or otherwise process personal data of our customers in accordance with the Personal Data Protection Act <span style="font-weight:600 ;">(“PDPA”)</span> . This Notice applies to personal data in our possession or under our control, including personal data in the possession of organisations which we have engaged to collect, use, disclose or process personal data for our purposes.
+          </p>
+          <h1 style="font-weight: 700; font-size:20px; margin-top:50px; margin-bottom:30px; text-decoration: underline; text-decoration-color: black;  ">PERSONAL DATA</h1>
+          <div class="row">
+            <div class="col-1">
+              <p style="font-size:20px; font-weight: 400px;">1.</p>
+            </div>
+            <div class="col-11" style="float:left ;">
+              <p style="font-size:20px; font-weight: 400px;">As used in this Notice: <br>
+ 
+                <span style="font-weight:600 ;">“customer”</span> means an individual who (a) has contacted us through any means to find out more about any goods or services we provide, or (b) may, or has, entered into a contract with us for the supply of any goods or services by us; and <br>
+                 
+                <span style="font-weight:600 ;">“personal data”</span> means data, whether true or not, about a customer who can be identified: (a) from that data; or (b) from that data and other information to which we have or are likely to have access.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <p style="font-size:20px; font-weight: 400px;">2.</p>
+            </div>
+            <div class="col-11" style="float:left ;">
+              <p style="font-size:20px; font-weight: 400px;">Depending on the nature of your interaction with us, some examples of personal data which we may collect from you include name and identification information such as your NRIC number, contact information such as your residential address, email address, telephone number, nationality, gender, date of birth, marital status, photograph and audio-visual information, employment information and financial information such as credit card numbers, debit card numbers or bank account information </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <p style="font-size:20px; font-weight: 400px;">3.</p>
+            </div>
+            <div class="col-11" style="float:left ;">
+              <p style="font-size:20px; font-weight: 400px;"> Other terms used in this Notice shall have the meanings given to them in the PDPA (where the context so permits).</p>
+            </div>
+          </div>
+          <h1 style="font-weight: 700; font-size:20px; margin-top:50px; margin-bottom:30px; text-decoration: underline; text-decoration-color: black;">COLLECTION, USE AND DISCLOSURE OF PERSONAL DATA</h1>
+          <div class="row">
+            <div class="col-1">
+              <p style="font-size:20px; font-weight: 400px;">4.</p>
+            </div>
+            <div class="col-11" style="float:left ;">
+              <p style="font-size:20px; font-weight: 400px;"> We generally do not collect your personal data unless (a) it is provided to us voluntarily by you directly or via a third party who has been duly authorised by you to disclose your personal data to us (your <span style="font-weight:600 ;">“authorised representative”</span>) after (i) you (or your authorised representative) have been notified of the purposes for which the data is collected, and (ii) you (or your authorised representative) have provided written consent to the collection and usage of your personal data for those purposes, or (b) collection and use of personal data without consent is permitted or required by the PDPA or other laws. We shall seek your consent before collecting any additional personal data and before using your personal data for a purpose which has not been notified to you (except where permitted or authorised by law).</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <p style="font-size:20px; font-weight: 400px;">5.</p>
+            </div>
+            <div class="col-11" style="float:left ;">
+              <p style="font-size:20px; font-weight: 400px;">  We may collect and use your personal data for any or all of the following purposes: <br>
+                (a) &nbsp; performing obligations in the course of or in connection with our provision of the goods and/or services requested by you; <br>
+                (b) &nbsp;verifying your identity; <br>
+                (c) &nbsp;responding to, handling, and processing queries, requests, applications, complaints, and feedback from you; <br>
+                (d) &nbsp;managing your relationship with us;<br>
+                (e) &nbsp;verifying your identity; <br>
+                (f) &nbsp;processing payment or credit transactions; <br>
+                (g) &nbsp;complying with any applicable laws, regulations, codes of practice, guidelines, or rules, or to assist in law enforcement and investigations conducted by any governmental and/or regulatory authority;
+                <br>
+                (h) &nbsp;any other purposes for which you have provided the information;
+                <br>
+                (i) &nbsp;transmitting to any unaffiliated third parties including our third party service providers and agents, and     relevant governmental and/or regulatory authorities, whether in Singapore or abroad, for the aforementioned purposes; and
+                <br>
+                (j) &nbsp;any other incidental business purposes related to or in connection with the above.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <p style="font-size:20px; font-weight: 400px;">6.</p>
+            </div>
+            <div class="col-11" style="float:left ;">
+              <p style="font-size:20px; font-weight: 400px;"> We may disclose your personal data: <br>
+                (a) &nbsp;where such disclosure is required for performing obligations in the course of or in connection with our provision of the goods and services requested by you; or
+                <br>
+                (b) &nbsp;to third party service providers, agents and other organisations we have engaged to perform any of the functions with reference to the above mentioned purposes. <br>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <p style="font-size:20px; font-weight: 400px;">7.</p>
+            </div>
+            <div class="col-11" style="float:left ;">
+              <p style="font-size:20px; font-weight: 400px;">  The purposes listed in the above clauses may continue to apply even in situations where your relationship with us (for example, pursuant to a contract) has been terminated or altered in any way, for a reasonable period thereafter (including, where applicable, a period to enable us to enforce our rights under a contract with you).
+              </p>
+            </div>
+          </div>
+          <h1 style="font-weight: 700; font-size:20px; margin-top:50px; margin-bottom:30px; text-decoration: underline; text-decoration-color: black;  ">RELIANCE ON THE LEGITIMATE INTERESTS EXCEPTION</h1>
+          <div class="row">
+            <div class="col-1">
+              <p style="font-size:20px; font-weight: 400px;">8.</p>
+            </div>
+            <div class="col-11" style="float:left ;">
+              <p style="font-size:20px; font-weight: 400px;">  In compliance with the PDPA, we may collect, use or disclose your personal data without your consent for the legitimate interests of La Ville esthétique or another person. In relying on the legitimate interests exception of the PDPA, La Ville esthétique will assess the likely adverse effects on the individual and determine that the legitimate interests outweigh any adverse effect.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <p style="font-size:20px; font-weight: 400px;">9.</p>
+            </div>
+            <div class="col-11" style="float:left ;">
+              <p style="font-size:20px; font-weight: 400px;">  In line with the legitimate interests’ exception, we will collect, use or disclose your personal data for the following purposes: <br>
+                (a) &nbsp; Fraud detection and prevention;
+                <br>
+                (b) &nbsp;Detection and prevention of misuse of services;<br>
+                (c) &nbsp; Network analysis to prevent fraud and financial crime, and perform credit analysis; and
+                <br>
+                (d) &nbsp; Collection and use of personal data on company-issued devices to prevent data loss.
+                <br>
+              </p>
+            </div>
+          </div>
+          <p  style="font-size:20px; font-weight: 400px;">The purposes listed in the above clause may continue to apply even in situations where your relationship with us (for example, pursuant to a contract) has been terminated or altered in any way, for a reasonable period thereafter.</p>
+          <h1 style="font-weight: 700; font-size:20px; margin-top:50px; margin-bottom:30px; text-decoration: underline; text-decoration-color: black;  ">WITHDRAWING YOUR CONSENT
+          </h1>
+          <div class="row">
+            <div class="col-1">
+              <p style="font-size:20px; font-weight: 400px;">10.</p>
+            </div>
+            <div class="col-11" style="float:left ;">
+              <p style="font-size:20px; font-weight: 400px;">  The consent that you provide for the collection, use and disclosure of your personal data will remain valid until such time it is being withdrawn by you in writing. You may withdraw consent and request us to stop collecting, using and/or disclosing your personal data for any or all of the purposes listed above by submitting your request in writing or via email to our Data Protection Officer at the contact details provided below.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <p style="font-size:20px; font-weight: 400px;">11.</p>
+            </div>
+            <div class="col-11" style="float:left ;">
+              <p style="font-size:20px; font-weight: 400px;">  Upon receipt of your written request to withdraw your consent, we may require reasonable time (depending on the complexity of the request and its impact on our relationship with you) for your request to be processed and for us to notify you of the consequences of us acceding to the same, including any legal consequences which may affect your rights and liabilities to us. In general, we shall seek to process your request within thirty (30) business days of receiving it.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <p style="font-size:20px; font-weight: 400px;">12.</p>
+            </div>
+            <div class="col-11" style="float:left ;">
+              <p style="font-size:20px; font-weight: 400px;">   Whilst we respect your decision to withdraw your consent, please note that depending on the nature and scope of your request, we may not be in a position to continue providing our goods or services to you and we shall, in such circumstances, notify you before completing the processing of your request. Should you decide to cancel your withdrawal of consent, please inform us in writing in the manner described in clause 8 above.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <p style="font-size:20px; font-weight: 400px;">13.</p>
+            </div>
+            <div class="col-11" style="float:left ;">
+              <p style="font-size:20px; font-weight: 400px;">  Please note that withdrawing consent does not affect our right to continue to collect, use and disclose personal data where such collection, use and disclose without consent is permitted or required under applicable laws.
+              </p>
+            </div>
+          </div>
+          <h1 style="font-weight: 700; font-size:20px; margin-top:50px; margin-bottom:30px; text-decoration: underline; text-decoration-color: black;  ">ACCESS TO AND CORRECTION OF PERSONAL DATA
+
+          </h1>
+          <div class="row">
+            <div class="col-1">
+              <p style="font-size:20px; font-weight: 400px;">14.</p>
+            </div>
+            <div class="col-11" style="float:left ;">
+              <p style="font-size:20px; font-weight: 400px;">  If you wish to make (a) an access request for access to a copy of the personal data which we hold about you or information about the ways in which we use or disclose your personal data, or (b) a correction request to correct or update any of your personal data which we hold about you, you may submit your request in writing or via email to our Data Protection Officer at the contact details provided below.
+
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <p style="font-size:20px; font-weight: 400px;">15.</p>
+            </div>
+            <div class="col-11" style="float:left ;">
+              <p style="font-size:20px; font-weight: 400px;">  Please note that a reasonable fee may be charged for an access request. If so, we will inform you of the fee before processing your request.
+
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <p style="font-size:20px; font-weight: 400px;">16.</p>
+            </div>
+            <div class="col-11" style="float:left ;">
+              <p style="font-size:20px; font-weight: 400px;"> We will respond to your request as soon as reasonably possible. In general, our response will be within thirty (30) business days. Should we not be able to respond to your request within thirty (30) days after receiving your request, we will inform you in writing within thirty (30) days of the time by which we will be able to respond to your request. If we are unable to provide you with any personal data or to make a correction requested by you, we shall generally inform you of the reasons why we are unable to do so (except where we are not required to do so under the PDPA).
+
+              </p>
+            </div>
+          </div>
+          <h1 style="font-weight: 700; font-size:20px; margin-top:50px; margin-bottom:30px; text-decoration: underline; text-decoration-color: black;  ">PROTECTION OF PERSONAL DATA
+          </h1>
+          <div class="row">
+            <div class="col-1">
+              <p style="font-size:20px; font-weight: 400px;">17.</p>
+            </div>
+            <div class="col-11" style="float:left ;">
+              <p style="font-size:20px; font-weight: 400px;">   To safeguard your personal data from unauthorised access, collection, use, disclosure, copying, modification, disposal or similar risks, we have introduced appropriate administrative, physical and technical measures such as minimised collection of personal data, authentication and access controls (such as good password practices, need-to-basis for data disclosure, etc.), encryption of data, data anonymisation, up-to-date antivirus protection, regular patching of operating system and other software, securely erase storage media in devices before disposal, web security measures against risks, usage of one time password(otp)/2 factor authentication (2fa)/multi-factor authentication (mfa) to secure access, and security review and testing performed regularly.
+
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <p style="font-size:20px; font-weight: 400px;">18.</p>
+            </div>
+            <div class="col-11" style="float:left ;">
+              <p style="font-size:20px; font-weight: 400px;"> You should be aware, however, that no method of transmission over the Internet or method of electronic storage is completely secure. While security cannot be guaranteed, we strive to protect the security of your information and are constantly reviewing and enhancing our information security measures.
+              </p>
+            </div>
+          </div>
+          <h1 style="font-weight: 700; font-size:20px; margin-top:50px; margin-bottom:30px; text-decoration: underline; text-decoration-color: black;  ">ACCURACY OF PERSONAL DATA</h1>
+          <div class="row">
+            <div class="col-1">
+              <p style="font-size:20px; font-weight: 400px;">19.</p>
+            </div>
+            <div class="col-11" style="float:left ;">
+              <p style="font-size:20px; font-weight: 400px;"> We generally rely on personal data provided by you (or your authorised representative). In order to ensure that your personal data is current, complete and accurate, please update us if there are changes to your personal data by informing our Data Protection Officer in writing or via email at the contact details provided below.
+
+              </p>
+            </div>
+          </div>
+          <h1 style="font-weight: 700; font-size:20px; margin-top:50px; margin-bottom:30px; text-decoration: underline; text-decoration-color: black;  ">RETENTION OF PERSONAL DATA
+          </h1>
+          <div class="row">
+            <div class="col-1">
+              <p style="font-size:20px; font-weight: 400px;">20.</p>
+            </div>
+            <div class="col-11" style="float:left ;">
+              <p style="font-size:20px; font-weight: 400px;"> We may retain your personal data for as long as it is necessary to fulfil the purpose for which it was collected, or as required or permitted by applicable laws.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <p style="font-size:20px; font-weight: 400px;">21.</p>
+            </div>
+            <div class="col-11" style="float:left ;">
+              <p style="font-size:20px; font-weight: 400px;">We will cease to retain your personal data, or remove the means by which the data can be associated with you, as soon as it is reasonable to assume that such retention no longer serves the purpose for which the personal data was collected, and is no longer necessary for legal or business purposes.
+
+              </p>
+            </div>
+          </div>
+          <h1 style="font-weight: 700; font-size:20px; margin-top:50px; margin-bottom:30px; text-decoration: underline; text-decoration-color: black;  ">TRANSFERS OF PERSONAL DATA OUTSIDE OF SINGAPORE</h1>
+          <div class="row">
+            <div class="col-1">
+              <p style="font-size:20px; font-weight: 400px;">22.</p>
+            </div>
+            <div class="col-11" style="float:left ;">
+              <p style="font-size:20px; font-weight: 400px;">  We generally do not transfer your personal data to countries outside of Singapore. However, if we do so, we will obtain your consent for the transfer to be made and we will take steps to ensure that your personal data continues to receive a standard of protection that is at least comparable to that provided under the PDPA.
+              </p>
+            </div>
+          </div>
+          <h1 style="font-weight: 700; font-size:20px; margin-top:50px; margin-bottom:30px; text-decoration: underline; text-decoration-color: black;  ">DATA PROTECTION OFFICER
+          </h1>
+          <div class="row">
+            <div class="col-1">
+              <p style="font-size:20px; font-weight: 400px;">23.</p>
+            </div>
+            <div class="col-11" style="float:left ;">
+              <p style="font-size:20px; font-weight: 400px;">  You may contact our Data Protection Officer if you have any enquiries or feedback on our personal data protection policies and procedures, or if you wish to make any request, in the following manner: 
+
+              </p>
+            </div>
+          </div>
+          <p style="font-weight:400 ; font-size: 20px;">Name of DPO: Clio Chuang</p>
+          <p style="font-weight:400 ; font-size: 20px;">Contact Number: 98761247</p>
+          <p style="font-weight:400 ; font-size: 20px;">Name of DPO: <a href="#" style="text-decoration-color:#0071E3; color: #0071E3;">ClioChuang@LaVille.com</a> </p> 
+          <h1 style="font-weight: 700; font-size:20px; margin-top:50px; margin-bottom:30px; text-decoration: underline; text-decoration-color: black;  ">EFFECT OF NOTICE AND CHANGES TO NOTICE
+          </h1>
+          <div class="row">
+            <div class="col-1">
+              <p style="font-size:20px; font-weight: 400px;">24.</p>
+            </div>
+            <div class="col-11" style="float:left ;">
+              <p style="font-size:20px; font-weight: 400px;">   This Notice applies in conjunction with any other notices, contractual clauses and consent clauses that apply in relation to the collection, use and disclosure of your personal data by us.
+
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <p style="font-size:20px; font-weight: 400px;">25.</p>
+            </div>
+            <div class="col-11" style="float:left ;">
+              <p style="font-size:20px; font-weight: 400px;">   We may revise this Notice from time to time without any prior notice. You may determine if any such revision has taken place by referring to the date on which this Notice was last updated. Your continued use of our services constitutes your acknowledgement and acceptance of such changes.
+              </p>
+            </div>
+          </div>
+          <p style="font-weight:400 ; font-size: 20px;">Effective date: &nbsp; 28/10/2022</p>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <section class="p-5" id="footer" style="background-color: #F8F8F8;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <h1 style="font-size:20px ; font-weight: 400;">Want to Know More?</h1>
+            <p style="font-weight: 700; font-size:36px;"> Consult Our Doctor Today!</p>
+            <a class="btn btn-dark" id="darkbtn" style="border-radius: 0px; padding-left:30px ; padding-right: 30px; font-size: 24px;" href="appointment.html" role="button">Consult Now</a>
+          </div> 
+          <div class="col-md-1"></div>
+          <div class="col-md-2">
+            <a href="about.html" style="text-decoration:none; color: #2D2D2D; display: block; margin-top: 20px;">About Us</a>
+            <a href="condition.html" style="text-decoration:none; color: #2D2D2D; display: block; margin-top: 20px;">Conditions</a>
+            <a href="package.html" style="text-decoration:none; color: #2D2D2D; display: block; margin-top: 20px;">Packages</a>
+          </div>
+          <div class="col-md-2">
+            <a href="contact.html" style="text-decoration:none; color: #2D2D2D; display: block; margin-top: 20px;">Contact Us</a>
+            <a href="blog.html" style="text-decoration:none; color: #2D2D2D; display: block; margin-top: 20px;">Blog</a>
+            
+          </div>
+          <div class="col-md-2">
+            <a href="pdpa.html" style="text-decoration:none; color: #2D2D2D; display: block; margin-top: 20px;">Terms and Conditions</a>
+            <a href="pdpa.html" style="text-decoration:none; color: #2D2D2D; display: block; margin-top: 20px;">Privacy Policy</a>
+          </div>
+          <hr style="margin-top: 40px;">
+        </div>
+        <div class="row">
+          <div class="col-md-10">
+            <p style="font-size:14px ; font-weight: 400;">Copyright &copy; 2022 La Ville Esthétique. All rights reserved.
+          </div>
+          <div class="col-md-2">
+            <a href="#" style="text-decoration:none; color: #2D2D2D; display: block;"><i class="fa-brands fa-instagram">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-facebook-f"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-twitter"></i></i></a>
+          </div>
+        </div>  
+      </div>  
+    </section>
+  
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>
