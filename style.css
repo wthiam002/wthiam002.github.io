@@ -384,10 +384,21 @@ body::before {
   font-size: 20px;
 }
 
+.carousel-caption p {
+  font-size: 18px;
+}
+
+
 .carousel-caption h4 {
   font-size: 20px;
 }
 .carousel-caption a{
   display: none;
 }
+}
+
+@media (max-width:560px) {
+  .carousel-item img{
+    min-height: 40vh;
+  }
 }
