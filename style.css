@@ -89,7 +89,7 @@ body{
 
 /* Contact Us banner */
 #contactbanner{
-  background-image: url(img/contactbanner.png);
+  background-image: url(img/aesthetic-clinic-contactbanner.png);
   background-size:cover;
   position: relative;;
 }
@@ -125,7 +125,7 @@ input[type=email] {
 
 /*Appointment banner*/
 #aptbanner{
-  background-image: url(img/aptbanner.png);
+  background-image: url(img/aesthetic-clinic-appointment-banner.png);
   background-size:cover;
   position: relative;
 }
@@ -139,7 +139,7 @@ input[type=email] {
 
 /*programme banner*/
 #programmebanner{
-  background-image: url(img/programmebanner.png);
+  background-image: url(img/aesthetic-clinic-programmebanner.png);
   background-size:cover;
   position: relative;
 }
@@ -153,7 +153,7 @@ input[type=email] {
 
 /*doc banner*/
 #docbanner{
-  background-image: url(img/docbanner.png);
+  background-image: url(img/aesthetic-clinic-doctor-quote-banner.png);
   background-size:cover;
   position: relative;
 }
@@ -385,7 +385,7 @@ body::before {
 }
 
 .carousel-caption p {
-  font-size: 18px;
+  font-size: 15px;
 }
 
 
@@ -400,5 +400,9 @@ body::before {
 @media (max-width:560px) {
   .carousel-item img{
     min-height: 40vh;
+  }
+  #map {
+    width: 75%;
+    height:55%;
   }
 }
